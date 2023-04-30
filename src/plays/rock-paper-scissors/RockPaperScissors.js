@@ -1,9 +1,9 @@
 import PlayHeader from 'common/playlists/PlayHeader';
-import './styles.css';
+import styles from './styles.module.css';
+import rock from "./images/rock.jpg";
 
 // WARNING: Do not change the entry componenet name
 function RockPaperScissors(props) {
-
   // Your Code Start below.
 
   return (
@@ -11,17 +11,12 @@ function RockPaperScissors(props) {
       <div className="play-details">
         <PlayHeader play={props} />
         <div className="play-details-body">
-        {/* Your Code Starts Here */}
-          <div>
-            <h1>Play Details -  Rock Paper Scissors</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque euismod, urna eu tincidunt consectetur,
-              nisi nunc ultricies nisi, eget consectetur nunc nisi
-              euismod nunc.
-            </p>
+          {/* Your Code Starts Here */}
+          <div className={styles.opponent}>
+            <h2>Opponent</h2>
+            <img src={rock} alt="Rock"/>
           </div>
-        {/* Your Code Ends Here */}
+          {/* Your Code Ends Here */}
         </div>
       </div>
     </>
